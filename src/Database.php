@@ -3,7 +3,7 @@ require('autoload.php');
 
 // Базовый родительский класс с методами который умеет создавать БД и подключаться к таблице а так же создавать таблицу при необходимости
 
-class Database implements DatabaseWrapper {
+abstract class Database implements DatabaseWrapper {
     private $pdo;
     protected $tableName;
 
